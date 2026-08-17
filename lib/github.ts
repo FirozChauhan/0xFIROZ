@@ -18,7 +18,7 @@ const FALLBACK_REPOS: GithubRepo[] = [
 
 // Correct/stale-proof homepage URLs for repos that changed deployments.
 const HOMEPAGE_OVERRIDES: Record<string, string> = {
-  "0xFIROZ": "https://zeroxfiroz-exxe.onrender.com/",
+  "0xFIROZ": "https://zeroxfiroz-19ch.onrender.com/",
   Tyla: "https://tyla-be9k.onrender.com",
   Fanaa: "https://fanaa.onrender.com",
   Jigar: "https://jigar-7h1m.onrender.com",
