@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Aref_Ruqaa_Ink, Reem_Kufi } from "next/font/google";
+import {
+  Geist,
+  Space_Grotesk,
+  JetBrains_Mono,
+  Aref_Ruqaa_Ink,
+  Reem_Kufi,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -7,8 +13,13 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
 
@@ -39,7 +50,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${arefRuqaa.variable} ${reemKufi.variable}`}
+      className={`${geistSans.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${arefRuqaa.variable} ${reemKufi.variable}`}
     >
       <body className="antialiased">{children}</body>
     </html>

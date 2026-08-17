@@ -20,7 +20,7 @@ export function ProfilePanel() {
         {/* Avatar + name */}
         <div className="flex flex-col items-center gap-3 text-center">
           <div className="relative">
-            <div className="h-20 w-20 rounded-full bg-gradient-to-br from-white via-[#8ea2ff] to-accent flex items-center justify-center text-3xl font-black text-black ring-2 ring-background">
+            <div className="h-20 w-20 rounded-full bg-gradient-to-br from-white via-[#8ea2ff] to-accent flex items-center justify-center text-3xl font-display font-bold text-black ring-2 ring-background">
               F
             </div>
             {/* online pulse ring */}
@@ -30,7 +30,7 @@ export function ProfilePanel() {
             />
           </div>
           <div className="space-y-1.5">
-            <h1 className="text-3xl font-black tracking-tight leading-none text-foreground">
+            <h1 className="font-display text-3xl font-bold tracking-tight leading-none text-foreground">
               {profile.name}
             </h1>
             <div className="flex flex-col items-center gap-2">
@@ -40,10 +40,6 @@ export function ProfilePanel() {
                   {profile.role}
                 </p>
               </div>
-              <span className="chip">
-                <span className="h-1.5 w-1.5 rounded-full bg-online" />
-                open to work
-              </span>
             </div>
           </div>
 

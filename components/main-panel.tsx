@@ -131,7 +131,7 @@ function ProjectCard({ p }: { p: (typeof projects)[number] }) {
             <Code2Icon />
           </span>
           <div>
-            <h3 className="text-base font-extrabold tracking-tight leading-none text-foreground">
+            <h3 className="font-display text-base font-bold tracking-tight leading-none text-foreground">
               {p.name}
             </h3>
             <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted">
@@ -362,7 +362,7 @@ export function MainPanel({ repos = [] }: { repos?: GithubRepo[] }) {
               />
               <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
                 <div>
-                  <h3 className="text-base font-extrabold tracking-tight text-foreground">
+                  <h3 className="font-display text-base font-bold tracking-tight text-foreground">
                     {experience.title}
                   </h3>
                   <p className="text-sm text-tertiary">{experience.org}</p>
@@ -430,7 +430,7 @@ export function MainPanel({ repos = [] }: { repos?: GithubRepo[] }) {
                   />
                   <div className="flex items-start justify-between gap-3">
                     <div>
-                      <h3 className="text-sm font-bold tracking-tight text-foreground">
+                      <h3 className="font-display text-sm font-bold tracking-tight text-foreground">
                         {e.degree}
                       </h3>
                       <p className="text-xs text-tertiary mt-0.5">{e.school}</p>

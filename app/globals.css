@@ -20,7 +20,8 @@
   --color-online: #34d399;
 
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
   --font-aref: var(--font-aref), "Aref Ruqaa Ink", serif;
   --font-reem: var(--font-reem), "Reem Kufi", sans-serif;
 }
