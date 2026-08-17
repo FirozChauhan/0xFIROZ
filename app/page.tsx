@@ -10,13 +10,13 @@ export default async function Home() {
     <div className="board-grid relative flex h-dvh flex-col overflow-hidden">
       {/* Blurred white glow blobs */}
       <div className="glow-blob top-[-120px] left-[-80px] h-[380px] w-[380px]" aria-hidden />
-      <div className="glow-blob bottom-[-140px] right-[-100px] h-[420px] w-[420px] opacity-40" aria-hidden />
-      <div className="glow-blob top-[30%] left-[45%] h-[300px] w-[300px] opacity-25" aria-hidden />
+      <div className="glow-blob-accent absolute bottom-[-140px] right-[-100px] h-[420px] w-[420px]" aria-hidden />
+      <div className="glow-blob top-[30%] left-[45%] h-[300px] w-[300px] opacity-40" aria-hidden />
 
       <Header />
 
       <main className="relative z-0 grid flex-1 min-h-0 grid-cols-1 gap-3 p-3 md:grid-cols-12">
-        <div className="md:col-span-4 min-h-0 overflow-y-auto">
+        <div className="md:col-span-4 min-h-0">
           <ProfilePanel />
         </div>
         <div className="md:col-span-8 min-h-0">
@@ -24,8 +24,8 @@ export default async function Home() {
         </div>
       </main>
 
-      {/* Footer — Arabic signature sits bottom-right inside it */}
-      <footer className="relative z-10 h-14 shrink-0 border-t border-[#d9d9d9] bg-black px-4 flex items-center justify-between gap-3">
+      {/* Footer — statusbar with Arabic signature */}
+      <footer className="relative z-10 h-12 shrink-0 border-t border-line bg-black px-4 flex items-center justify-between gap-3">
         <p dir="rtl" className="bg-white font-reem text-lg text-muted leading-tight bg-clip-text text-transparent">
           مصلحت حسن کو بیگانہ بنا دیتی ہے
         </p>

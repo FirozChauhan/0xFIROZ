@@ -122,3 +122,24 @@ export const DownloadIcon = (p: P) => (
     <line x1="12" x2="12" y1="15" y2="3" />
   </svg>
 );
+
+export const PinIcon = (p: P) => (
+  <svg {...base(p)}>
+    <path d="M12 17v5" />
+    <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6a1 1 0 0 0 1-1 2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2 1 1 0 0 0 1 1z" />
+  </svg>
+);
+
+export const ArrowUpRightIcon = (p: P) => (
+  <svg {...base(p)}>
+    <path d="M7 7h10v10" />
+    <path d="M7 17 17 7" />
+  </svg>
+);
+
+export const TerminalIcon = (p: P) => (
+  <svg {...base(p)}>
+    <polyline points="4 17 10 11 4 5" />
+    <line x1="12" x2="20" y1="19" y2="19" />
+  </svg>
+);
