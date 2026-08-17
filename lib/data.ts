@@ -63,15 +63,15 @@ export const skills: { group: string; items: string[] }[] = [
 
 export const projects: Project[] = [
   {
-    name: "Johanka",
-    stack: "Next.js 15 · React 19 · TypeScript · PostgreSQL · Firebase Auth",
+    name: "Tyla",
+    stack: "TypeScript · Express.js · MongoDB (Mongoose) · Sharp · Firebase Auth · Vite",
     description:
-      "Self-hosted full-stack video streaming platform — drag-and-drop upload, live media library management, search, and secure authentication.",
+      "Image processing API for developers — upload once, transform forever via a single composable URL, with per-key analytics.",
     points: [
-      "Full-stack video streaming with drag-and-drop upload, live media library management, search, and secure user auth.",
-      "Scalable REST backend with admin-level auth for seamless streaming, persistence, and media storage.",
+      "Transform images on the fly with a single composable URL — resize, crop, optimize without storing variants.",
+      "Per-key analytics and secure uploads with Firebase Admin auth over an Express/MongoDB backend.",
     ],
-    repo: "https://github.com/FirozChauhan/johanka",
+    repo: "https://github.com/FirozChauhan/Tyla",
     featured: true,
   },
   {

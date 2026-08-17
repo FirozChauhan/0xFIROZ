@@ -7,9 +7,12 @@ export interface GithubRepo {
 
 // Static fallback used if the API call fails or no token/network is available.
 const FALLBACK_REPOS: GithubRepo[] = [
-  { name: "pebbles", repo: "https://github.com/FirozChauhan/pebbles", lang: "TypeScript" },
-  { name: "pebblesServer", repo: "https://github.com/FirozChauhan/pebblesServer", lang: "TypeScript" },
-  { name: "Jackdow__swww-wrapper", repo: "https://github.com/FirozChauhan/Jackdow__swww-wrapper", lang: "Python" },
+  { name: "Tyla", repo: "https://github.com/FirozChauhan/Tyla", lang: "TypeScript" },
+  { name: "Fanaa", repo: "https://github.com/FirozChauhan/Fanaa", lang: "TypeScript" },
+  { name: "Glisters", repo: "https://github.com/FirozChauhan/Glisters", lang: "JavaScript" },
+  { name: "Jigar", repo: "https://github.com/FirozChauhan/Jigar", lang: "TypeScript" },
+  { name: "johanka", repo: "https://github.com/FirozChauhan/johanka", lang: "TypeScript" },
+  { name: "oob", repo: "https://github.com/FirozChauhan/oob", lang: "TypeScript" },
 ];
 
 interface GithubApiRepo {
