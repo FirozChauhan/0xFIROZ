@@ -198,7 +198,7 @@ export function MainPanel({ repos = [] }: { repos?: GithubRepo[] }) {
   const [tab, setTab] = useState<Tab>("projects");
 
   return (
-    <section className="panel-pattern relative flex h-full flex-col border border-line bg-background/85 backdrop-blur-sm animate-fadeIn">
+    <section className="panel-pattern relative flex flex-col border border-line bg-background/85 backdrop-blur-sm animate-fadeIn md:h-full">
       {/* Accent hairline */}
       <div className="top-accent absolute inset-x-0 top-0" aria-hidden />
 
@@ -206,7 +206,7 @@ export function MainPanel({ repos = [] }: { repos?: GithubRepo[] }) {
       <div
         role="tablist"
         aria-label="Portfolio sections"
-        className="flex flex-wrap items-center gap-1 border-b border-line bg-surface px-3 py-2"
+        className="tab-scroll flex items-center gap-1 overflow-x-auto border-b border-line bg-surface px-3 py-2"
       >
         {TABS.map((t) => {
           const active = tab === t.id;
@@ -217,7 +217,7 @@ export function MainPanel({ repos = [] }: { repos?: GithubRepo[] }) {
               role="tab"
               aria-selected={active}
               onClick={() => setTab(t.id)}
-              className={`relative flex items-center gap-1.5 rounded-sm px-3 py-2 text-xs font-medium transition-all duration-200 ${
+              className={`relative flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-sm px-3 py-2 text-xs font-medium transition-all duration-200 ${
                 active
                   ? "text-foreground"
                   : "text-muted hover:bg-surface-light hover:text-foreground"
@@ -267,7 +267,7 @@ export function MainPanel({ repos = [] }: { repos?: GithubRepo[] }) {
         </div>
       </div>
 
-      <div className="flex-1 min-h-0 overflow-y-auto p-4">
+      <div className="p-4 md:min-h-0 md:flex-1 md:overflow-y-auto">
         {tab === "projects" && (
           <div className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -325,7 +325,7 @@ export function MainPanel({ repos = [] }: { repos?: GithubRepo[] }) {
                                 title={`${r.name} — live site`}
                                 aria-label={`${r.name} — open live site`}
                                 onClick={(e) => e.stopPropagation()}
-                                className="flex h-7 w-7 items-center justify-center rounded-sm text-muted transition-colors duration-150 hover:bg-surface-soft hover:text-accent-strong"
+                                className="flex h-8 w-8 items-center justify-center rounded-sm text-muted transition-colors duration-150 hover:bg-surface-soft hover:text-accent-strong sm:h-7 sm:w-7"
                               >
                                 <ExternalLinkIcon className="h-4 w-4" />
                               </a>
@@ -337,7 +337,7 @@ export function MainPanel({ repos = [] }: { repos?: GithubRepo[] }) {
                               title={`${r.name} — source code`}
                               aria-label={`${r.name} — open source code`}
                               onClick={(e) => e.stopPropagation()}
-                              className="flex h-7 w-7 items-center justify-center rounded-sm text-muted transition-colors duration-150 hover:bg-surface-soft hover:text-foreground"
+                              className="flex h-8 w-8 items-center justify-center rounded-sm text-muted transition-colors duration-150 hover:bg-surface-soft hover:text-foreground sm:h-7 sm:w-7"
                             >
                               <GitHubIcon className="h-4 w-4" />
                             </a>

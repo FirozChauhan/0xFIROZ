@@ -12,7 +12,7 @@ export function ProfilePanel() {
   // Direct Cloudflare link to the resume PDF (set in .env as NEXT_PUBLIC_RESUME_URL).
   const resumeUrl = process.env.NEXT_PUBLIC_RESUME_URL || "#";
   return (
-    <aside className="panel-pattern relative flex h-full flex-col overflow-hidden border border-line bg-surface/85 backdrop-blur-sm animate-slideIn">
+    <aside className="panel-pattern relative flex flex-col overflow-hidden border border-line bg-surface/85 backdrop-blur-sm animate-slideIn md:h-full">
       {/* accent hairline */}
       <div className="top-accent absolute inset-x-0 top-0" aria-hidden />
 
@@ -69,7 +69,7 @@ export function ProfilePanel() {
         {/* Summary */}
         <div className="mt-4 space-y-2">
           <p className="section-header">Summary</p>
-          <p className="text-sm text-tertiary leading-normal text-justify">
+          <p className="text-sm text-tertiary leading-normal sm:text-justify">
             {profile.summary}
           </p>
         </div>

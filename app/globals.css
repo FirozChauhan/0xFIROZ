@@ -142,6 +142,32 @@ a {
   cursor: pointer;
 }
 
+/* Hide tap highlight flash on mobile */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ---- Mobile: tab strip scrolls horizontally without a visible scrollbar ---- */
+.tab-scroll {
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.tab-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---- Mobile: cheaper glow blobs (big blurs are GPU-heavy on phones) ---- */
+@media (max-width: 767px) {
+  .glow-blob,
+  .glow-blob-accent {
+    filter: blur(45px);
+  }
+  .glow-blob {
+    opacity: 0.55;
+  }
+}
+
 /* ---- Animations ---- */
 @keyframes fadeIn {
   from {

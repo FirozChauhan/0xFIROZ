@@ -5,7 +5,7 @@ import { GitHubIcon, MailIcon } from "@/components/icons";
 export function Header() {
   const version = getAppVersion();
   return (
-    <header className="relative shrink-0 bg-black">
+    <header className="relative shrink-0 bg-black pt-[env(safe-area-inset-top)]">
       {/* Accent hairline across the very top */}
       <div className="top-accent absolute inset-x-0 top-0" aria-hidden />
 

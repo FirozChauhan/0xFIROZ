@@ -7,7 +7,7 @@ export default async function Home() {
   const repos = await getGithubRepos();
 
   return (
-    <div className="board-grid relative flex h-dvh flex-col overflow-hidden">
+    <div className="board-grid relative flex h-dvh flex-col overflow-hidden pb-[env(safe-area-inset-bottom)]">
       {/* Blurred white glow blobs */}
       <div className="glow-blob top-[-120px] left-[-80px] h-[380px] w-[380px]" aria-hidden />
       <div className="glow-blob-accent absolute bottom-[-140px] right-[-100px] h-[420px] w-[420px]" aria-hidden />
@@ -15,7 +15,7 @@ export default async function Home() {
 
       <Header />
 
-      <main className="relative z-0 grid flex-1 min-h-0 grid-cols-1 gap-3 p-3 md:grid-cols-12">
+      <main className="relative z-0 grid flex-1 min-h-0 grid-cols-1 gap-3 overflow-y-auto p-3 md:grid-cols-12 md:overflow-hidden">
         <div className="md:col-span-4 min-h-0">
           <ProfilePanel />
         </div>
@@ -25,13 +25,13 @@ export default async function Home() {
       </main>
 
       {/* Footer — statusbar with Arabic signature */}
-      <footer className="relative z-10 h-12 shrink-0 border-t border-line bg-black px-4 flex items-center justify-between gap-3">
-        <p dir="rtl" className="bg-white font-reem text-lg text-muted leading-tight bg-clip-text text-transparent">
+      <footer className="relative z-10 flex h-9 shrink-0 items-center justify-between gap-3 border-t border-line bg-black px-3 sm:h-12 sm:px-4">
+        <p dir="rtl"          className="bg-white font-reem text-xs text-muted leading-tight bg-clip-text text-transparent sm:text-lg">
           مصلحت حسن کو بیگانہ بنا دیتی ہے
         </p>
         <span
           dir="rtl"
-          className="font-aref text-2xl sm:text-[28px] mb-2"
+          className="whitespace-nowrap font-aref text-[15px] leading-none sm:mb-2 sm:text-[28px] sm:leading-normal"
         >
           {/* Aref Ruqaa Ink ships with baked-in red color glyphs, so plain
               text-* color is ignored by the font. We use a solid background
