@@ -14,6 +14,7 @@ const FALLBACK_REPOS: GithubRepo[] = [
   { name: "Jigar", repo: "https://github.com/FirozChauhan/Jigar", lang: "TypeScript", homepage: "https://jigar-8bj9.onrender.com/" },
   { name: "johanka", repo: "https://github.com/FirozChauhan/johanka", lang: "TypeScript", homepage: "https://johanka.onrender.com/" },
   { name: "oob", repo: "https://github.com/FirozChauhan/oob", lang: "TypeScript", homepage: "https://oob-13cm.onrender.com/" },
+  { name: "0xFIROZ", repo: "https://github.com/FirozChauhan/0xFIROZ", lang: "TypeScript", homepage: "https://zeroxfiroz-xj97.onrender.com/" },
 ];
 
 // Fallback live URLs used ONLY when a repo has no homepage set on GitHub.
