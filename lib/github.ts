@@ -52,8 +52,8 @@ export async function getGithubRepos(
       `https://api.github.com/users/${encodeURIComponent(username)}/repos?sort=updated&per_page=10&type=all`,
       {
         headers,
-        // Cache for 10 minutes to stay gentle on rate limits.
-        next: { revalidate: 600 },
+        // Cache briefly so GitHub edits show up fast; falls back gracefully on rate limits.
+        next: { revalidate: 60 },
       }
     );
     if (!res.ok) {
