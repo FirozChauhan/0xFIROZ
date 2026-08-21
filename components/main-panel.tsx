@@ -9,6 +9,7 @@ import {
   Code2Icon,
   ExternalLinkIcon,
   GitHubIcon,
+  GlobeIcon,
   GraduationCapIcon,
   LayersIcon,
   PinIcon,
@@ -145,6 +146,18 @@ function ProjectCard({ p }: { p: (typeof projects)[number] }) {
               <PinIcon className="h-3 w-3" />
               pinned
             </span>
+          )}
+          {p.homepage && (
+            <a
+              href={p.homepage}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`${p.name} — live site`}
+              title={`${p.name} — live site`}
+              className="p-1.5 rounded-sm text-muted hover:text-accent-strong hover:bg-surface-soft transition-all duration-200"
+            >
+              <GlobeIcon />
+            </a>
           )}
           <a
             href={p.repo}

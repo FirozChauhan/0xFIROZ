@@ -49,6 +49,14 @@ export const ExternalLinkIcon = (p: P) => (
   </svg>
 );
 
+export const GlobeIcon = (p: P) => (
+  <svg {...base(p)}>
+    <circle cx="12" cy="12" r="10" />
+    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+    <path d="M2 12h20" />
+  </svg>
+);
+
 export const BriefcaseIcon = (p: P) => (
   <svg {...base(p)}>
     <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />

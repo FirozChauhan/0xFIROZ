@@ -6,6 +6,7 @@ export interface Project {
   description: string;
   points: string[];
   repo: string;
+  homepage?: string;
   featured?: boolean;
 }
 
@@ -72,6 +73,7 @@ export const projects: Project[] = [
       "Per-key analytics and secure uploads with Firebase Admin auth over an Express/MongoDB backend.",
     ],
     repo: "https://github.com/FirozChauhan/Tyla",
+    homepage: "https://tyla-kt09.onrender.com",
     featured: true,
   },
   {
@@ -85,6 +87,7 @@ export const projects: Project[] = [
       "Low-latency backend over WebSockets + Cloudinary, wired to Firebase auth for seamless data sync.",
     ],
     repo: "https://github.com/FirozChauhan/oob",
+    homepage: "https://oob-13cm.onrender.com/",
     featured: true,
   },
 ];
